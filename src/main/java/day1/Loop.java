@@ -18,21 +18,20 @@ public class Loop {
         int count2 = 0; // 변수를 만듦과 동시에 값 저장
         System.out.println(count2);
 
-        while(count2 < 10) {
+        while (count2 < 10) {
             System.out.println("반갑습니다.");
             count2++;
         }
 
         // for
         //바로 위에꺼랑 같은 원리
-        for(int count3 = 0; count3 < 10; count3++) {
+        for (int count3 = 0; count3 < 10; count3++) {
             System.out.println("화이팅!");
         }
 
-        for(int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             System.out.println(i);
         }
-
 
 
         //수업 문제
@@ -61,8 +60,8 @@ public class Loop {
 
         int num3 = 1;
 
-        while(num3 <= 100) {
-            if(num2 % 2 == 0) {
+        while (num3 <= 100) {
+            if (num2 % 2 == 0) {
                 System.out.println(num3 + ":even");
             } else {
                 System.out.println(num3 + ":odd");
@@ -88,8 +87,6 @@ public class Loop {
         System.out.println(finalScore);  // 출력: 4
 
 
-
-
         int a = 12;
         int b = 5;
 
@@ -102,7 +99,16 @@ public class Loop {
             System.out.print(i + " ");
         }
 
+        int count3 = 0;
+
+        while (count3 < 10) {
+            System.out.println("반복된 횟수: " + count3);
+            count3++;
+        }
+
+
 
 
     }
+
 }

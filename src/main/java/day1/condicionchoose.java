@@ -78,6 +78,21 @@ public class condicionchoose {
             System.out.println("할인대상 입니다.");
         }
 
+        int score2 = 90;
+
+        if(score2 >= 90){
+            System.out.println("A");
+        }
+        else if(score2 >= 80){
+            System.out.println("B");
+        }
+        else if(score2 >= 70){
+            System.out.println("C");
+        }
+        else{
+            System.out.println("D");
+        }
+
 
 
 

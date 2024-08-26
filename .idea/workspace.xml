@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/Loop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/condicionchoose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/condition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day1/variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/DoubleLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/InputExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/inputString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day1/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day1/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day1/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day1/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day1/condicionchoose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day1/condicionchoose.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +34,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2l2J06TdjKMekJOQlZW6wr1fT89" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,10 +45,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Loop.executor": "Debug",
+    "Application.Array.executor": "Run",
+    "Application.DoubleLoop.executor": "Run",
+    "Application.Input.executor": "Run",
+    "Application.InputExam.executor": "Run",
+    "Application.Loop.executor": "Run",
     "Application.Print.executor": "Debug",
     "Application.condicionchoose.executor": "Run",
     "Application.condition.executor": "Run",
+    "Application.inputString.executor": "Run",
     "Application.operator.executor": "Run",
     "Application.test.executor": "Run",
     "Application.test2.executor": "Run",
