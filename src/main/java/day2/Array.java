@@ -108,6 +108,8 @@ public class Array {
         String[] arr8 = {"apple", "banana", "orange"};
         boolean[] arr9 = {true, false,};
 
+
+
     }
 }
 

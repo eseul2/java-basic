@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/DoubleLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/InputExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/inputString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day3/InputGarbage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day3/NameApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day3/Object.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day3/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day3/VariableScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/method/Method.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/method/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/ObjectExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/Reference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day1/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day1/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day1/condicionchoose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day1/condicionchoose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day2/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day2/InputExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/InputExam.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +54,12 @@
     "Application.DoubleLoop.executor": "Run",
     "Application.Input.executor": "Run",
     "Application.InputExam.executor": "Run",
+    "Application.InputGarbage.executor": "Run",
     "Application.Loop.executor": "Run",
+    "Application.Method.executor": "Run",
+    "Application.NameApp.executor": "Run",
+    "Application.Object.executor": "Run",
+    "Application.ObjectExam.executor": "Run",
     "Application.Print.executor": "Debug",
     "Application.condicionchoose.executor": "Run",
     "Application.condition.executor": "Run",

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class InputExam {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 
         //반복문 추가 문법 (while 로 무한반복)
 
@@ -36,50 +36,74 @@ public class InputExam {
 
 
         // 문제 : 스캐너를 이용한 사칙연산 프로그램 v2
-        int[] arr = {1, 2, 3, 4, 5};
+//        int[] arr = {1, 2, 3, 4, 5};
+//
+//        while (true) {
+//            System.out.print("기능을 선택해주세요 (1.더하기, 2.빼기, 3.곱하기, 4.나누기, 5.종료) : ");
+//            int num = sc.nextInt();
+//
+//            if (num == arr[0]) {
+//                System.out.println("첫번째 숫자를 입력해주세요 : ");
+//                int num2 = sc.nextInt();
+//
+//                System.out.println("두번째 숫자를 입력해주세요 : ");
+//                int num3 = sc.nextInt();
+//
+//                System.out.println(num2 + num3);
+//            } else if (num == arr[1]) {
+//                System.out.println("첫번째 숫자을 입력해주세요 : ");
+//                int num2 = sc.nextInt();
+//
+//                System.out.println("두번째 숫자를 입력해주세요 : ");
+//                int num3 = sc.nextInt();
+//
+//                System.out.println(num2 - num3);
+//            } else if (num == arr[2]) {
+//                System.out.println("첫번째 숫자을 입력해주세요 : ");
+//                int num2 = sc.nextInt();
+//
+//                System.out.println("두번째 숫자를 입력해주세요 : ");
+//                int num3 = sc.nextInt();
+//
+//                System.out.println(num2 * num3);
+//            } else if (num == arr[3]) {
+//                System.out.println("첫번째 숫자을 입력해주세요 : ");
+//                int num2 = sc.nextInt();
+//
+//                System.out.println("두번째 숫자를 입력해주세요 : ");
+//                int num3 = sc.nextInt();
+//
+//                System.out.println(num2 / num3);
+//            } else if (num == arr[4]) {
+//                System.out.println("계산기 프로그램을 종료합니다.");
+//                break;
+//            } else {
+//                System.out.println("그런 기능은 존재하지 않습니다.");
+//            }
+//        }
 
-        while (true) {
-            System.out.print("기능을 선택해주세요 (1.더하기, 2.빼기, 3.곱하기, 4.나누기, 5.종료) : ");
-            int num = sc.nextInt();
 
-            if (num == arr[0]) {
-                System.out.println("첫번째 숫자를 입력해주세요 : ");
-                int num2 = sc.nextInt();
+        // 스캐너를 이용한 자기소개
+//        Scanner sc = new Scanner(System.in);
+//
+//        while(true) {
+//            System.out.print("이름을 입력해주세요. : ");
+//            String num1 = sc.nextLine();
+//
+//
+//            System.out.print("나이를 입력해주세요. : ");
+//            String num2 = sc.nextLine();
+//
+//            System.out.println("안녕하세요. " + num2 + "살 " + num1 + "입니다." );
+//
+//        }
 
-                System.out.println("두번째 숫자를 입력해주세요 : ");
-                int num3 = sc.nextInt();
 
-                System.out.println(num2 + num3);
-            } else if (num == arr[1]) {
-                System.out.println("첫번째 숫자을 입력해주세요 : ");
-                int num2 = sc.nextInt();
 
-                System.out.println("두번째 숫자를 입력해주세요 : ");
-                int num3 = sc.nextInt();
 
-                System.out.println(num2 - num3);
-            } else if (num == arr[2]) {
-                System.out.println("첫번째 숫자을 입력해주세요 : ");
-                int num2 = sc.nextInt();
 
-                System.out.println("두번째 숫자를 입력해주세요 : ");
-                int num3 = sc.nextInt();
 
-                System.out.println(num2 * num3);
-            } else if (num == arr[3]) {
-                System.out.println("첫번째 숫자을 입력해주세요 : ");
-                int num2 = sc.nextInt();
 
-                System.out.println("두번째 숫자를 입력해주세요 : ");
-                int num3 = sc.nextInt();
 
-                System.out.println(num2 / num3);
-            } else if (num == arr[4]) {
-                System.out.println("계산기 프로그램을 종료합니다.");
-                break;
-            } else {
-                System.out.println("그런 기능은 존재하지 않습니다.");
-            }
-        }
     }
 }
