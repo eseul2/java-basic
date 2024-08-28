@@ -32,6 +32,8 @@ public class Object {
         System.out.println(hong.age + "살, " + hong.home + " 사는 " + hong.name + "입니다.");
         System.out.println(lee.age + "살, " + lee.home + " 사는 " + lee.name + "입니다.");
 
+        Person c = new Person();
+
 
 
     }

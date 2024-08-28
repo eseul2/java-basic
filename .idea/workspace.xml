@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day3/InputGarbage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day3/NameApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day3/Object.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day3/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day3/VariableScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/method/Method.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/method/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/ObjectExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/Reference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/instanceVar/InstamceVar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/instanceVar/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/AccountExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Return.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachineExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/Warrior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day2/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day2/InputExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/InputExam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day3/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/Object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/ObjectExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ObjectExam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +51,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AccountExam.executor": "Run",
     "Application.Array.executor": "Run",
     "Application.DoubleLoop.executor": "Run",
     "Application.Input.executor": "Run",
     "Application.InputExam.executor": "Run",
     "Application.InputGarbage.executor": "Run",
+    "Application.InstamceVar.executor": "Run",
     "Application.Loop.executor": "Run",
     "Application.Method.executor": "Run",
     "Application.NameApp.executor": "Run",
     "Application.Object.executor": "Run",
     "Application.ObjectExam.executor": "Run",
     "Application.Print.executor": "Debug",
+    "Application.Return.executor": "Run",
+    "Application.VendingMachineExam.executor": "Run",
     "Application.condicionchoose.executor": "Run",
     "Application.condition.executor": "Run",
     "Application.inputString.executor": "Run",
