@@ -16,7 +16,7 @@ public class Test {
 //    //실수를 사용할 땐 int 말고 double
 //
 //    // 내가 한 거
-//    public int dan(int nam3, int nam4) {
+//    public double dan(int nam3, int nam4) {
 //        System.out.println(nam3 * nam4);
 //        return nam3 + nam4;
 //    }
@@ -66,7 +66,7 @@ public class Test {
 //    }
 
 
-    public void plus(int num1, int num2){
+    public int plus(int num1, int num2){
         System.out.println(num1 + num2);   //더이상 건들지 마
         return 10;
 

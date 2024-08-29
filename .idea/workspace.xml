@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/instanceVar/InstamceVar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instanceVar/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/AccountExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Return.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachineExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/ArrayListExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/ArrayRemove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/NameApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/NameAppExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day5/introduce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/Object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/ObjectExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ObjectExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/methodRetrun/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachineExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachineExam.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -53,6 +52,8 @@
   "keyToString": {
     "Application.AccountExam.executor": "Run",
     "Application.Array.executor": "Run",
+    "Application.ArrayListExam.executor": "Run",
+    "Application.ArrayRemove.executor": "Run",
     "Application.DoubleLoop.executor": "Run",
     "Application.Input.executor": "Run",
     "Application.InputExam.executor": "Run",
@@ -61,6 +62,7 @@
     "Application.Loop.executor": "Run",
     "Application.Method.executor": "Run",
     "Application.NameApp.executor": "Run",
+    "Application.NameAppExam.executor": "Run",
     "Application.Object.executor": "Run",
     "Application.ObjectExam.executor": "Run",
     "Application.Print.executor": "Debug",
@@ -69,11 +71,13 @@
     "Application.condicionchoose.executor": "Run",
     "Application.condition.executor": "Run",
     "Application.inputString.executor": "Run",
+    "Application.introduce.executor": "Run",
     "Application.operator.executor": "Run",
     "Application.test.executor": "Run",
     "Application.test2.executor": "Run",
     "Application.variable.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
