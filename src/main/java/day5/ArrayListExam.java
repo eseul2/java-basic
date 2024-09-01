@@ -157,8 +157,7 @@ public class ArrayListExam {
 
         // 중요합니다!!
         // 수천개의 데이터가 있을 때 일일이 어떤 값의
-        // 인덱스를 찾기 힘들기 때뭉에 이 방법으로 사용합니다.
-
+        // 인덱스를 찾기 힘들기 때문에 값을 바꿔줘야 할 때 이 방법으로 사용합니다.
         for (String name : list4) {
             System.out.println(list4);
 
@@ -170,6 +169,7 @@ public class ArrayListExam {
                 if (list4.get(i).equals("을지문덕")) {
                     list4.set(i, "유관순");
                 }
+
 
             }
         }
@@ -185,7 +185,6 @@ public class ArrayListExam {
         for (String name : list4) {
             System.out.println(name);
         }
-
 
 
         list4.set(1, "신사임당");

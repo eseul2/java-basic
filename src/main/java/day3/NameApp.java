@@ -9,6 +9,7 @@ package day3;
 
 import java.lang.module.FindException;
 import java.net.BindException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class NameApp {
@@ -46,54 +47,16 @@ public class NameApp {
 
         Scanner sc = new Scanner(System.in);
 
-        //       String[] arr = {"help", "add", "list", "exit"};
-        //      String name;
 
-
-//        String[] names = new String[5]; //null
+//        int[] ages = new int[5];
+//        int index2 = 0;
+//        String[] names = new String[5];
 //        int index = 0;
-//
-//
-//
-//        while (true) {
-//
-//            System.out.print("명령어를 입력 해주세요 : ");
-//            String num = sc.nextLine();
-//
-//            if (num.equals("help")) {
-//                System.out.println("add : 이름입력");
-//                System.out.println("list : 이름목록");
-//                System.out.println("exit : 종료");
-//            }
-//
-//            else if (num.equals("add")) {
-//                System.out.println("이름을 입력해주세요. : ");
-//                names[index] = sc.nextLine();
-//                System.out.println(names[index] + " 이 명부에 저장 되었습니다.");
-//                index++;
-//            }
-//
-//
-//            else if (num.equals("list")) {
-//                System.out.println("===== 이름 목록 ====");
-//                for(int i = 0; i < index; i++) {
-//                    System.out.println(names[i]);
-//                }
-//            }
-//
-//            else if(num.equals("exit")){
-//                System.out.println("이름 프로그램이 종료됩니다.");
-//                break;
-//            }
-//        }
+
+        ArrayList<Integer> ages = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<>();
 
 
-
-
-        String[] ages = new String[5];
-        int index2 = 0;
-        String[] names = new String[5];
-        int index = 0;
 
 
         while (true) {
@@ -104,19 +67,20 @@ public class NameApp {
                 System.out.println("add : 이름 입력");
                 System.out.println("list : 이름 목록");
                 System.out.println("exit : 종료");
+
             } else if (num.equals("add")) {
                 System.out.print("이름을 입력해주세요. : ");
-                names[index] = sc.nextLine();
+                String name = sc.nextLine();
+                names.add(name);
                 System.out.print("나이를 입력해주세요. : ");
-                ages[index2] = sc.nextLine();
-                System.out.println(names[index] + " , " + ages[index2] + "이 명부에 저장 되었습니다.");
-                index++;
-                index2++;
+                ages.add(Integer.parseInt(sc.nextLine()));
+                System.out.println(name + " , " + ages + "이 명부에 저장 되었습니다.");
+
             } else if (num.equals("list")) {
                 System.out.println("==== 이름 목록 ====");
-                for (int i = 0; i < index; i++) {
-                    for (int j = 0; j < index2; j++)
-                        System.out.println(names[i] + " , " + ages[j]);
+                for (int i = 0; i < names.size(); i++) {
+                    for (int j = 0; j < ages.size(); j++)
+                        System.out.println(names.get(i) + " , " + ages.get(i));
 
                 }
             } else if (num.equals("exit")) {

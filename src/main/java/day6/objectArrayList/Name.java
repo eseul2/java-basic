@@ -1,4 +1,10 @@
 package day6.objectArrayList;
 
-public class Person {
+public class Name {
+
+
+    int age;
+    String name;
+
+
 }
