@@ -147,50 +147,72 @@ public class Kiosk {
                     }
                 } else if (cancleMenu == 2) {
                     System.out.println("취소할 사이드를 선택해주세요");
-                    for (int i = 1; i < sideCart.size(); i++) {
+                    for (int i = 0; i < sideCart.size(); i++) {
                         System.out.printf("%d. %s\n", i + 1, sideCart.get(i).name);
-                        System.out.print("선택: ");
-                        int cancleIndex = Integer.parseInt(sc.nextLine()) - 1;
-                        if (cancleIndex >= 1) {
-                            System.out.println(sideCart.get(cancleIndex).name + "가 취소되었습니다.");
-                            sideCart.remove(cancleIndex);
-
-                        }
+                    }
+                    System.out.print("선택: ");
+                    int cancleIndex = Integer.parseInt(sc.nextLine()) - 1;
+                    if (cancleIndex >= 0) {
+                        System.out.println(sideCart.get(cancleIndex).name + "가 취소되었습니다.");
+                        sideCart.remove(cancleIndex);
                     }
 
                 } else if (cancleMenu == 3) {
                     System.out.println("취소할 음료수를 선택해주세요");
-                    for (int i = 1; i < drinkCart.size(); i++) {
+                    for (int i = 0; i < drinkCart.size(); i++) {
                         System.out.printf("%d. %s\n", i + 1, drinkCart.get(i).name);
-                        System.out.print("선택: ");
-                        int cancleIndex = Integer.parseInt(sc.nextLine()) - 1;
-                        if (cancleIndex >= 1) {
-                            System.out.println(drinkCart.get(cancleIndex).name + "가 취소되었습니다.");
-                            drinkCart.remove(cancleIndex);
-                        } else {
-                            System.out.println("잘못된 선택입니다.");
-
-                        }
                     }
-                } else if (menu == 5) {
-
-                    System.out.print("정말 주문하시겠습니까? y / n");
-                    String confirm = sc.nextLine(); //주문 확인 : confirm
-
-                    if (confirm.equals("y")) {
-                        System.out.print("영수증을 발급 하시겠습니까? (y / n)");
-                        String receipt = sc.nextLine(); // 영수증 : receipt
-
-                        if (receipt.equals("y")) {
-                            System.out.println("영수증이 발급 되었습니다.");
-                        }
-
-
+                    System.out.print("선택: ");
+                    int cancleIndex = Integer.parseInt(sc.nextLine()) - 1;
+                    if (cancleIndex >= 0) {
+                        System.out.println(drinkCart.get(cancleIndex).name + "가 취소되었습니다.");
+                        drinkCart.remove(cancleIndex);
                     }
+                }
+            } else if (menu == 5) {
+
+                System.out.print("정말 주문하시겠습니까? y / n : ");
+                String confirm = sc.nextLine(); //주문 확인 : confirm
+                System.out.print("결제금액을 입력해주세요 : ");
+                int payment = Integer.parseInt(sc.nextLine()); // 결제금액
+
+                if (confirm.equals("y")) {
+                    System.out.print("영수증을 발급 하시겠습니까? (y / n)");
+                    String receipt = sc.nextLine(); // 영수증 : receipt
+
+                    System.out.println("=== 영수증 ===");
+
+                    for (Burger burger : burgerCart) {
+                        total = total + burger.price;
+                    }
+                    for (Side side : sideCart) {
+                        total = total + side.price;
+                    }
+                    for (Drink drink : drinkCart) {
+                        total = total + drink.price;
+                    }
+
+                    System.out.println("총금액 : " + total);
+
+                    System.out.println("===============");
+
+
+                    //거스름돈
+
+
+                    if (receipt.equals("y")) {
+                        System.out.println("영수증이 발급 되었습니다.");
+                    }
+                    break;
+
+
                 }
             }
         }
     }
 }
+
+
+
 
 

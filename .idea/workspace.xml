@@ -5,28 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Bow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Casting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Casting2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/CastingExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Spear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/composition/Conposition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorparation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/constructorChain/ConstructorChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Arm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/AsuraDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Intheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/MallardDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Rubber2Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/RubberDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/WhiteDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Bow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Sword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/teat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/NameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/NameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day5/ArrayListExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day5/ArrayListExam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Burger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Drink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Side.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/constructor/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/constructor/Constructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/constructor/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/constructor/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/CarExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/CarExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/CatExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/CatExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/ObjectArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/ObjectArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/PersionExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/PersionExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/WorriorExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/objectArrayList/WorriorExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methodRetrun/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/Beverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachineExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodRetrun/VendingMachineExam.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +76,21 @@
     "Application.BugerKioskExam.executor": "Run",
     "Application.BurgerKioskExam.executor": "Run",
     "Application.CarExam.executor": "Run",
+    "Application.Casting.executor": "Run",
+    "Application.CastingExam.executor": "Run",
     "Application.CatExam.executor": "Run",
+    "Application.Conposition.executor": "Run",
     "Application.Constructor.executor": "Run",
+    "Application.ConstructorChain.executor": "Run",
     "Application.DoubleLoop.executor": "Run",
+    "Application.Exam.executor": "Run",
     "Application.Input.executor": "Run",
     "Application.InputExam.executor": "Run",
     "Application.InputGarbage.executor": "Run",
     "Application.InstamceVar.executor": "Run",
+    "Application.Intheritance.executor": "Run",
     "Application.Kiosk.executor": "Run",
+    "Application.LeeCorparation.executor": "Run",
     "Application.Loop.executor": "Run",
     "Application.Method.executor": "Run",
     "Application.NameApp.executor": "Run",
@@ -91,6 +108,7 @@
     "Application.inputString.executor": "Run",
     "Application.introduce.executor": "Run",
     "Application.operator.executor": "Run",
+    "Application.teat.executor": "Run",
     "Application.test.executor": "Run",
     "Application.test2.executor": "Run",
     "Application.variable.executor": "Run",

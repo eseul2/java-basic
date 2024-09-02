@@ -1,4 +1,4 @@
 package day7.inheritance;
 
-public class MallardDuck {
+public class MallardDuck extends Duck {
 }

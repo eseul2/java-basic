@@ -1,4 +1,10 @@
 package day7.test;
 
-public class Weapon {
+public class Weapon extends Warrior {
+
+
+
+
+
+
 }

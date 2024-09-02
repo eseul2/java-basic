@@ -1,4 +1,4 @@
 package day7.test;
 
-public class Nife {
+public class Sword extends Weapon{
 }
