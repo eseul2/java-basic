@@ -3,23 +3,56 @@ package day7.test;
 public class Exam {
     public static void main(String[] args) {
 
+
         Warrior warrior = new Warrior();
-        warrior.name = "홍길동";
+
         warrior.age = 20;
-
-
-        warrior.introduce();
-
         warrior.weapon = new Bow();
-        warrior.attack();
-
-//        warrior.weapon = new Sword();
-//        warrior.attack();
-
-
-
-
-
+        warrior.weapon = new Sword();
 
     }
 }
+
+
+
+
+class Weapon {
+
+}
+
+
+
+
+class Warrior {
+
+    int age;
+    Weapon weapon;
+
+
+}
+
+
+
+
+class Bow extends Weapon {
+
+    public Bow(){
+        System.out.println("활");
+    }
+
+}
+
+
+
+
+class Sword extends Weapon {
+
+    public Sword(){
+        System.out.println("칼");
+    }
+
+
+}
+
+
+

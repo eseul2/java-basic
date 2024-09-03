@@ -5,38 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Bow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Casting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Casting2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/CastingExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Spear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/casting/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/composition/Conposition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorparation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/constructorChain/ConstructorChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Arm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/AsuraDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Intheritance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/MallardDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/Rubber2Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/RubberDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/inheritance/WhiteDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Bow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Sword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test/teat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test2/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/AccessModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Person2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/StaticExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/StaticExam2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Burger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/composition/Conposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day7/composition/Conposition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Bow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day7/test/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Sword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Warrior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Weapon.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AccessModifier.executor": "Run",
     "Application.AccountExam.executor": "Run",
     "Application.Array.executor": "Run",
     "Application.ArrayListExam.executor": "Run",
@@ -100,7 +91,12 @@
     "Application.ObjectExam.executor": "Run",
     "Application.PersionExam.executor": "Run",
     "Application.Print.executor": "Debug",
+    "Application.Project.executor": "Run",
     "Application.Return.executor": "Run",
+    "Application.StaticExam.executor": "Run",
+    "Application.StaticExam2.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.Test2.executor": "Run",
     "Application.VendingMachineExam.executor": "Run",
     "Application.WorriorExam.executor": "Run",
     "Application.condicionchoose.executor": "Run",

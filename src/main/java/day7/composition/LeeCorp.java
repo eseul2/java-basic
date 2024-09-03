@@ -2,17 +2,32 @@ package day7.composition;
 
 public class LeeCorp {
 
-    Kildong kildong;
+
+    JavaDeveloper developer;
     Kilsoon kilsoon;
-    Jinee jinee;
+
 
     public void java() {
-       // developer.java();
+        developer.java();
     }
 
-    public void python(){
+
+    public void python() {
         kilsoon.python();
     }
+
+
+//    Kildong kildong;
+//    Kilsoon kilsoon;
+//    Jinee jinee;
+//
+//    public void java() {
+//       // developer.java();
+//    }
+//
+//    public void python(){
+//        kilsoon.python();
+//    }
 
 
 

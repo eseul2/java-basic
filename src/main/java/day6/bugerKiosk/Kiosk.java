@@ -48,6 +48,11 @@ public class Kiosk {
         int cancelIndex = 0;
 
 
+
+
+
+
+        // 목록
         System.out.println("햄버거 키오스크 v1");
         while (true) {
             System.out.println("1.햄버거 선택");
@@ -73,6 +78,9 @@ public class Kiosk {
             }
             System.out.println("]");
 
+
+            // 목록과 토탈 금ㅇ액 구현
+
             int total = 0;
 
             for (Burger burger : burgerCart) {
@@ -90,6 +98,9 @@ public class Kiosk {
             int menu = Integer.parseInt(sc.nextLine());
 
 
+
+            // 1번 햄버거 목록 주문
+
             if (menu == 1) {
                 System.out.println("=== 햄버거 목록 ===");
                 for (int i = 0; i < burgers.size(); i++) {
@@ -101,8 +112,12 @@ public class Kiosk {
                 Burger burger = burgers.get(choiceNo - 1); //선택한 번호로 버거 가져오기
                 burgerCart.add(burger); //카트에 선택한 버거 추가
                 burger.select();
+            }
 
-            } else if (menu == 2) {
+
+            // 2번 사이드 목록 주문
+
+            else if (menu == 2) {
                 System.out.println("=== 사이드 목록 ===");
                 for (int j = 0; j < sides.size(); j++) {
                     System.out.printf("%d. %s %d\n", j + 1, sides.get(j).name, sides.get(j).price);
@@ -113,9 +128,12 @@ public class Kiosk {
                 Side side = sides.get(choiceNo - 1);
                 sideCart.add(side);
                 side.select();
+            }
 
 
-            } else if (menu == 3) {
+            // 3번 사이드 목록 주문
+
+            else if (menu == 3) {
                 System.out.println("=== 음료수 목록 ===");
                 for (int k = 0; k < drinks.size(); k++) {
                     System.out.printf("%d. %s %d\n", k + 1, drinks.get(k).name, drinks.get(k).price);
@@ -126,14 +144,20 @@ public class Kiosk {
                 Drink drink = drinks.get(choiceNo - 1);
                 drinkCart.add(drink);
                 drink.select();
+            }
 
-            } else if (menu == 4) {
+
+            // 4번 메뉴 취소
+
+            else if (menu == 4) {
                 System.out.print("어떤 메뉴를 취소하겠습니까?");
                 System.out.println("1. 버거");
                 System.out.println("2. 사이드");
                 System.out.println("3. 음료수");
                 int cancleMenu = Integer.parseInt(sc.nextLine());
 
+
+                // 취소할 버거 선택
                 if (cancleMenu == 1) {
                     System.out.print("취소할 버거를 선택해주세요");
                     for (int i = 0; i < burgerCart.size(); i++) {
@@ -145,7 +169,10 @@ public class Kiosk {
                         System.out.println(burgerCart.get(cancleIndex).name + "가 취소되었습니다.");
                         burgerCart.remove(cancleIndex);
                     }
-                } else if (cancleMenu == 2) {
+                }
+
+                // 취소할 사이드 선택
+                else if (cancleMenu == 2) {
                     System.out.println("취소할 사이드를 선택해주세요");
                     for (int i = 0; i < sideCart.size(); i++) {
                         System.out.printf("%d. %s\n", i + 1, sideCart.get(i).name);
@@ -157,7 +184,10 @@ public class Kiosk {
                         sideCart.remove(cancleIndex);
                     }
 
-                } else if (cancleMenu == 3) {
+                }
+
+                // 취소할 음료수 선택
+                else if (cancleMenu == 3) {
                     System.out.println("취소할 음료수를 선택해주세요");
                     for (int i = 0; i < drinkCart.size(); i++) {
                         System.out.printf("%d. %s\n", i + 1, drinkCart.get(i).name);
@@ -169,7 +199,11 @@ public class Kiosk {
                         drinkCart.remove(cancleIndex);
                     }
                 }
-            } else if (menu == 5) {
+            }
+
+
+            // 5번 주문하기
+            else if (menu == 5) {
 
                 System.out.print("정말 주문하시겠습니까? y / n : ");
                 String confirm = sc.nextLine(); //주문 확인 : confirm
@@ -198,6 +232,7 @@ public class Kiosk {
 
 
                     //거스름돈
+
 
 
                     if (receipt.equals("y")) {
