@@ -5,28 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day7/test2/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/AccessModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/accessModifer/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Person2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/StaticExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/StaticExam2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day8/staticExam/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/teat/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day6/bugerKiosk/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/composition/Conposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day7/composition/Conposition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day7/composition/LeeCorp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Bow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day7/test/Exam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Sword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Warrior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day7/test/Weapon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Project.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +97,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
