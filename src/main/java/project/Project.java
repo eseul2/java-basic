@@ -17,13 +17,15 @@ public class Project {
 
 
         ProjectApp projectApp = new ProjectApp();
-        projectApp.run();
+        projectApp. start();
 
 
 
         }
 
     }
+
+
 
 
 

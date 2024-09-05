@@ -1,5 +1,7 @@
 package project.teat;
 
+import project.Post;
+
 import java.util.ArrayList;
 
 public class Test {
@@ -32,3 +34,11 @@ class Person{
 
 }
 
+//
+//
+//private void list() {
+//    System.out.println("================");
+//    for (Post post : posts) {
+//        System.out.printf("번호 : %d\n", post.getId());
+//        System.out.printf("제목 : %s\n", post.getTitle());
+//        System.out.println("================");

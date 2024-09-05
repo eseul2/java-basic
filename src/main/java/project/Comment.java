@@ -5,21 +5,33 @@ import java.time.format.DateTimeFormatter;
 
 public class Comment {
 
-    private  String content;
-    private LocalDateTime dateTime;
 
 
-    public Comment(String content, LocalDateTime dateTime){
-        this.content =content;
+    // 댓글
+    private String textComment;
+    private String dateTime;
+
+    public Comment(String textComment, String dateTime) {
+        this.textComment = textComment;
         this.dateTime = dateTime;
     }
 
-    public String getContent() {
-        return content;
+    public String getText() {
+        return textComment;
     }
 
-    public String getFormatterdDateTime() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-                return dateTime.format((formatter));
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[%s] %s", dateTime, textComment);
     }
 }
+
+
+
+
+
+
