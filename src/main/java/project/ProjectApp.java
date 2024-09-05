@@ -61,6 +61,8 @@ public class ProjectApp {
                 singup();
             } else if (command.equals("login")) {
                 login();
+            } else if (command.equals("sort")) {
+                sort();
             }
         }
     }
@@ -195,6 +197,15 @@ public class ProjectApp {
             }
         }
     }
+
+    private void sort() { 
+        System.out.println("정렬 대상을 선택해주세요. (1. 번호, 2. 조회수");
+    }
+
+
+
+
+
 
     private void serch() {
         System.out.println("검색 키워드를 입력해주세요 : ");

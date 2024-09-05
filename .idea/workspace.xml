@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/Like.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/Membership.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/PostView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/teat/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/teat/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
