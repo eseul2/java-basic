@@ -1,7 +1,9 @@
 package project;
 
 import project.post.Post;
+import project.post.PostController;
 import project.post.PostRepository;
+import project.post.PostView;
 
 import java.io.*;
 import java.time.LocalDateTime;
@@ -12,6 +14,7 @@ public class ProjectApp implements Serializable {
 
     ArrayList<Membership> memberships;
     Scanner sc = new Scanner(System.in);
+    PostView postView =new PostView();
 
     int lastesId;//가장 최신의 id값. id값의 고유성을 유지하기 위해 1씩 증가시킬 계획.
     private String loggedInId = null;
@@ -81,7 +84,7 @@ public class ProjectApp implements Serializable {
 
     private void list() {
         ArrayList<Post> posts = postRepository.getPosts();
-        printPostList(posts);
+        postView.printPostList(posts);
     }
 
     private void add() {
@@ -100,7 +103,7 @@ public class ProjectApp implements Serializable {
         System.out.println("수정할 게시물 번호 : ");
         int targetId = Integer.parseInt(sc.nextLine());
 
-        Post post = findPostById(targetId);
+        Post post = postRepository.findPostById(targetId);
 
         if (post == null) {
             System.out.println("없는 게시물 번호입니다.");
@@ -119,7 +122,7 @@ public class ProjectApp implements Serializable {
     private void delete() {
         System.out.print("삭제할 게시물 번호 : ");
         int targetId = Integer.parseInt(sc.nextLine());
-        Post post = findPostById(targetId);
+        Post post = postRepository.findPostById(targetId);
 
         if (post == null) {
             System.out.println("없는 게시물 번호입니다.");
@@ -129,25 +132,19 @@ public class ProjectApp implements Serializable {
         System.out.println("삭제가 완료되었습니다.");
     }
 
+
     private void detail() {
         System.out.println("상세보기 할 게시물 번호를 입력해주세요 : ");
         int targetId = Integer.parseInt(sc.nextLine());
 
-        Post post = findPostById(targetId);
+        Post post = postRepository.findPostById(targetId);
 
         if (post == null) {
             System.out.println("없는 게시물입니다.");
             return;
         }
         post.increaseview();
-        System.out.printf("번호 : %d\n", post.getId());
-        System.out.printf("제목 : %s\n", post.getTitle());
-        System.out.printf("내용 : %s\n", post.getBody());
-        System.out.printf("등록날짜 : %s\n", post.getCreateDate());
-        System.out.printf("작성자 : %s\n", post.getAuthor());
-        System.out.printf("조회수 : %s\n", post.getView());
-        System.out.printf("좋아요 : %s %d\n", post.getLikeCount() > 0 ? "♥" : "♡", post.getLikeCount());
-        System.out.println("=================");
+        postView.printPostDetail(post);
 
         System.out.println("====== 댓글 =====");
         for (Comment comment : post.getComments()) {
@@ -198,7 +195,7 @@ public class ProjectApp implements Serializable {
                     postRepository.delete(post);
                     System.out.printf("%s님의 %d번 게시물을 삭제했습니다.\n", post.getAuthor(), post.getId());
                     ArrayList<Post> posts = postRepository.getPosts();
-                    printPostList(posts);
+                    postView.printPostList(posts);
                 }
 
 
@@ -236,7 +233,7 @@ public class ProjectApp implements Serializable {
             Collections.sort(posts, comparator);
 
             // 정렬된 목록 출력
-            printPostList(posts);
+            postView.printPostList(posts);
         }
     }
 
@@ -252,7 +249,7 @@ public class ProjectApp implements Serializable {
                 searchedPostList.add(post);
             }
         }
-        printPostList(searchedPostList);
+        postView.printPostList(searchedPostList);
     }
 
 
@@ -316,18 +313,7 @@ public class ProjectApp implements Serializable {
     }
 
 
-    // 찾겠다. 포스트를. 아이디로
-// 만약 내가 찾고자 하는 게시물이 없다면?
-    public Post findPostById(int id) {
-        ArrayList<Post> posts = postRepository.getPosts();
-        printPostList(posts);
-        for (Post post : posts) {
-            if (post.getId() == id) {         //항상 찾는 값이 바뀔테니까 매개변수 값을 입력해준다.
-                return post;                 // return을 만나면 메서드는 그 즉시 종료
-            }
-        }
-        return null;
-    }
+
 
     public String getcurrentDateTime() {
         LocalDateTime currentDateTime = LocalDateTime.now();
@@ -340,17 +326,6 @@ public class ProjectApp implements Serializable {
     }
 
 
-    // 서치 기능
-    public void printPostList(ArrayList<Post> targetList) {
-        System.out.println("==================");
-        for (Post post : targetList) {
-            System.out.printf("번호 : %d\n", post.getId());
-            System.out.printf("제목 : %s\n", post.getTitle());
-            System.out.printf("작성자 : %s\n", post.getAuthor());
-            System.out.println("==================");
-
-        }
-    }
 
     // 파일 저장과 로드를 담당하는 메서드
     // 파일 저장 메서드 saveDate

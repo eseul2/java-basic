@@ -5,31 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/BoardApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/post/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/post/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/post/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/post/PostView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/Paging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/post/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Membership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Membership.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/PostView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/teat/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/teat/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/Like.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/Membership.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/PoseView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/PostRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectTset/ProjectApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/post/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/post/PostView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

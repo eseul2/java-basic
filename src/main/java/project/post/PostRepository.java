@@ -31,5 +31,19 @@ public class PostRepository {
     }
 
 
+    // 찾겠다. 포스트를. 아이디로
+// 만약 내가 찾고자 하는 게시물이 없다면?
+    public Post findPostById(int id) {
+        for (Post post : posts) {
+            if (post.getId() == id) {         //항상 찾는 값이 바뀔테니까 매개변수 값을 입력해준다.
+                return post;                 // return을 만나면 메서드는 그 즉시 종료
+            }
+        }
+        return null;
+    }
 
-}
+
+    }
+
+
+
