@@ -1,11 +1,10 @@
-package project;
+package project.page;
 
 import project.post.Post;
 
 import java.util.ArrayList;
 
 public class Paging {
-
 
     private ArrayList<Post> posts;
     // 페이지 항목
@@ -22,23 +21,7 @@ public class Paging {
         this.totalPages = (int) Math.ceil((double) posts.size() / itemsPerPage);
     }
 
-    // 현재 페이지의 게시물 출력
-    public void printCurrentPage() {
-        int start = (currentPage - 1) * itemsPerPage;
-        int end = Math.min(start + itemsPerPage, posts.size());
 
-        System.out.println("===============");
-        for (int i = start; i < end; i++) {
-            Post post = posts.get(i);
-            System.out.printf("번호 : %d\n", post.getId());
-            System.out.printf("제목 : %s\n", post.getTitle());
-            System.out.printf("작성자 : %s\n", post.getAuthor());
-            System.out.printf("조회수 : %d\n", post.getView());
-            System.out.printf("좋아요 : %s %d\n", post.getLikeCount() > 0 ? "♥" : "♡", post.getLikeCount());
-            System.out.println("==================");
-        }
-        printPageBlock();
-    }
 
 
     // 이전 페이지로 이동

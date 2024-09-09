@@ -18,8 +18,8 @@ public class Project {
         projectApp.start();
         //프로그램 종료시 데이터 저장
 
-        PostController postController =new PostController();
-        postController.saveDate();
+//        PostController postController =new PostController();
+//        postController.saveDate();
 
     }
 }

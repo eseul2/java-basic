@@ -1,6 +1,6 @@
 package project;
 
-import project.membership.Membership;
+import project.membership.MembershipController;
 import project.post.PostController;
 
 import java.io.*;
@@ -8,12 +8,15 @@ import java.util.*;
 
 public class ProjectApp implements Serializable {
 
-    ArrayList<Membership> memberships;
+
     private String loggedInId = null;
     private String loggedInNickname = null;
     Scanner sc = new Scanner(System.in);
 
-    PostController postController =new PostController();
+    MembershipController membershipController =new MembershipController();
+    PostController postController =new PostController(membershipController);
+
+
 
     public void start() {
 
@@ -41,9 +44,9 @@ public class ProjectApp implements Serializable {
             } else if (command.equals("search")) {
                 postController.serch();
             } else if (command.equals("signup")) {
-                postController.singup();
+                membershipController.singup();
             } else if (command.equals("login")) {
-                postController.login();
+                membershipController.login();
             } else if (command.equals("sort")) {
                 postController.sort();
             }else if(command.equals("page")) {

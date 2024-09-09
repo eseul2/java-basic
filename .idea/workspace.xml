@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/membership/MembershipView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/page/PagingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/page/PagingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/page/Paging.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/membership/Membership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/membership/Membership.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/membership/MembershipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/membership/MembershipController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/post/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/post/PostView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/post/PostView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

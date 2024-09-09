@@ -9,11 +9,13 @@ public class Membership implements Serializable {
     private String nickname;
 
 
+
     public Membership(String logInId, String pass, String nickname) {
         this.logInId = logInId;
         this.pass = pass;
         this.nickname = nickname;
     }
+
 
 
     public void setLogInId(String logInId) {
