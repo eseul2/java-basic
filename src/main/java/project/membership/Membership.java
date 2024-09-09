@@ -1,4 +1,4 @@
-package project;
+package project.membership;
 
 import java.io.Serializable;
 

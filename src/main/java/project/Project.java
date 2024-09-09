@@ -1,5 +1,7 @@
 package project;
 
+import project.post.PostController;
+
 public class Project {
 
     // main 메서드와 findPostById 메서드가 같이 사용해야 하므로 main 밖으로 빼주고 static을 붙여줬다.
@@ -15,7 +17,9 @@ public class Project {
         ProjectApp projectApp = new ProjectApp();
         projectApp.start();
         //프로그램 종료시 데이터 저장
-        projectApp.saveDate();
+
+        PostController postController =new PostController();
+        postController.saveDate();
 
     }
 }

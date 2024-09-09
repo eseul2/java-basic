@@ -1,10 +1,11 @@
 package project.post;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 // 창고 관리 ( Model)
-public class PostRepository {
+public class PostRepository implements Serializable {
 
     private ArrayList<Post> posts = new ArrayList<>();
 

@@ -1,8 +1,9 @@
 package project.post;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class PostView {
+public class PostView implements Serializable {
 
 
     // 서치 기능
