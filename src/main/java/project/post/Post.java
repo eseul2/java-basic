@@ -1,11 +1,16 @@
-package project;
+package project.post;
 
+import project.Comment;
+
+import java.io.Serializable;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 
-public class Post {
+public class Post implements Serializable {
+    private static final long serialVersionUID = 1L;
+
 
     private int id;
     private String title;
@@ -27,6 +32,7 @@ public class Post {
         this.comments = new ArrayList<>();
         this.likes = new ArrayList<>();
     }
+
 
 
     // 좋아요 추가
@@ -127,14 +133,4 @@ public class Post {
 
 
 
-
-    //    public Post(int id, String title, String body) {
-//        this.id = id;
-//        this.title = title;
-//        this.body = body;
-//    }
-
-
 }
-
-

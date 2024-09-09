@@ -1,8 +1,4 @@
 package project;
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Project {
 
@@ -15,15 +11,14 @@ public class Project {
 
     public static void main(String[] args) {
 
-
+        // main 메서드는 프로그램의 스위치 역할만 하면 된다.
         ProjectApp projectApp = new ProjectApp();
-        projectApp. start();
-
-
-
-        }
+        projectApp.start();
+        //프로그램 종료시 데이터 저장
+        projectApp.saveDate();
 
     }
+}
 
 
 

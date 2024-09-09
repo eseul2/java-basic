@@ -1,12 +1,12 @@
 package project;
 
-public class Membership {
+import java.io.Serializable;
 
+public class Membership implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String logInId;
     private String pass;
     private String nickname;
-
-
 
 
     public Membership(String logInId, String pass, String nickname) {
@@ -40,4 +40,3 @@ public class Membership {
         return nickname;
     }
 }
-

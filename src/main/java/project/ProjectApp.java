@@ -1,18 +1,19 @@
 package project;
 
+import project.post.Post;
+import project.post.PostRepository;
+
+import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
-public class ProjectApp {
+public class ProjectApp implements Serializable {
 
-
-    ArrayList<Membership> memberships = new ArrayList<>();
-
+    ArrayList<Membership> memberships;
     Scanner sc = new Scanner(System.in);
 
-    int lastesId = 4;//가장 최신의 id값. id값의 고유성을 유지하기 위해 1씩 증가시킬 계획.
+    int lastesId;//가장 최신의 id값. id값의 고유성을 유지하기 위해 1씩 증가시킬 계획.
     private String loggedInId = null;
     private String loggedInNickname = null;
 
@@ -22,13 +23,20 @@ public class ProjectApp {
 
     // 값의 초기화는 대부분 생성자에서 해주는 것을 권장한다. 다양한 로직 수행 가능.
     public ProjectApp() {
-        Post p1 = new Post(1, "안녕하세요 반갑습니다. java 공부중이에요.", "", "홍길동", getcurrentDateTime(), 0);
-        Post p2 = new Post(2, "java 질문좀 할게요~", "", "홍길동", getcurrentDateTime(), 0);
-        Post p3 = new Post(3, "정처기 따야되나요?", "", "홍길동", getcurrentDateTime(), 0);
 
-        postRepository.save(p1);
-        postRepository.save(p2);
-        postRepository.save(p3);
+        memberships = new ArrayList<>();
+        loadDate();
+
+        if(postRepository.getPosts().isEmpty()) {
+            Post p1 = new Post(1, "안녕하세요 반갑습니다. java 공부중이에요.", "", "홍길동", getcurrentDateTime(), 0);
+            Post p2 = new Post(2, "java 질문좀 할게요~", "", "홍길동", getcurrentDateTime(), 0);
+            Post p3 = new Post(3, "정처기 따야되나요?", "", "홍길동", getcurrentDateTime(), 0);
+
+            postRepository.save(p1);
+            postRepository.save(p2);
+            postRepository.save(p3);
+            lastesId = 4;
+        }
     }
 
     public void start() {
@@ -43,6 +51,7 @@ public class ProjectApp {
             String command = sc.nextLine();
 
             if (command.equals("exit")) {
+                saveDate();  // 프로그램 종료 전 데이터 저장
                 System.out.println("프로그램을 종료합니다.");
                 break;
             } else if (command.equals("add")) {
@@ -63,6 +72,8 @@ public class ProjectApp {
                 login();
             } else if (command.equals("sort")) {
                 sort();
+            }else if(command.equals("page")) {
+                page();
             }
         }
     }
@@ -198,14 +209,36 @@ public class ProjectApp {
         }
     }
 
-    private void sort() { 
-        System.out.println("정렬 대상을 선택해주세요. (1. 번호, 2. 조회수");
+    private void sort() {
+        System.out.println("정렬 대상을 선택해주세요. (1. 번호, 2. 조회수) : ");
+        int targetNo = Integer.parseInt(sc.nextLine());
+
+        System.out.println("정렬 방법을 선택해주세요. (1. 오름차순, 2. 내림차순) : ");
+        int how = Integer.parseInt(sc.nextLine());
+
+        ArrayList<Post> posts = postRepository.getPosts();
+
+        Comparator<Post> comparator = null;
+
+        if(targetNo == 1) {
+            //번호로 정렬
+            comparator = Comparator.comparing(Post::getId);
+        }else if(targetNo == 2) {
+            // 조회수로 정렬
+            comparator = Comparator.comparing(Post::getView);
+        }
+
+        if(comparator != null) {
+            // 정렬 방법에 따라 오름차순/내림차순 선택
+            if(how == 2) {
+                comparator = comparator.reversed();
+            }
+            Collections.sort(posts, comparator);
+
+            // 정렬된 목록 출력
+            printPostList(posts);
+        }
     }
-
-
-
-
-
 
     private void serch() {
         System.out.println("검색 키워드를 입력해주세요 : ");
@@ -257,6 +290,31 @@ public class ProjectApp {
         System.out.println("로그인 실패 ");
     }
 
+    private void page() {
+        ArrayList<Post> posts = postRepository.getPosts();
+        Paging paging = new Paging(posts, 3);   //페이지당 3개의 게시물
+
+
+        while (true) {
+            paging.printCurrentPage();
+
+            System.out.print("페이징 명령어를 입력해주세요 (1. 이전, 2. 다음, 3. 선택, 4. 뒤로가기) : ");
+            int command = Integer.parseInt(sc.nextLine());
+
+            if (command == 1) { // 이전 페이지
+                paging.prevPage();
+            } else if (command == 2) { // 다음 페이지
+                paging.nextPage();
+            } else if (command == 3) { // 특정 페이지 선택
+                System.out.println("이동하실 페이지 번호를 입력해주세요 : ");
+                int selectedPage = Integer.parseInt(sc.nextLine());
+                paging.moveToPage(selectedPage);
+            } else if (command == 4) { // 뒤로가기
+                break;
+            }
+        }
+    }
+
 
     // 찾겠다. 포스트를. 아이디로
 // 만약 내가 찾고자 하는 게시물이 없다면?
@@ -291,6 +349,31 @@ public class ProjectApp {
             System.out.printf("작성자 : %s\n", post.getAuthor());
             System.out.println("==================");
 
+        }
+    }
+
+    // 파일 저장과 로드를 담당하는 메서드
+    // 파일 저장 메서드 saveDate
+    public void saveDate() {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("data.dat"))) {
+            oos.writeObject(postRepository.getPosts());
+            oos.writeObject(memberships);
+            oos.writeObject(lastesId);  // 최신 id저장
+            System.out.println("데이터가 저장되었습니다.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loadDate() {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("data.dat"))) {
+            postRepository.setPosts((ArrayList<Post>) ois.readObject());
+            memberships = (ArrayList<Membership>) ois.readObject();
+            lastesId = (int) ois.readObject();  //최신 id 로드
+
+            System.out.println("데이터가 성공적으로 로드되었습니다.");
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println("저장된 데이터가 없습니다.");
         }
     }
 

@@ -1,12 +1,12 @@
 package project;
 
+
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Comment {
-
-
-
+public class Comment implements Serializable {
+    private static final long serialVersionUID = 1L;
     // 댓글
     private String textComment;
     private String dateTime;
@@ -29,9 +29,6 @@ public class Comment {
         return String.format("[%s] %s", dateTime, textComment);
     }
 }
-
-
-
 
 
 

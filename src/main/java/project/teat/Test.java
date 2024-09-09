@@ -1,7 +1,5 @@
 package project.teat;
 
-import project.Post;
-
 import java.util.ArrayList;
 
 public class Test {
