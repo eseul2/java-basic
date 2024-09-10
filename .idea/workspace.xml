@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/membership/MembershipRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/page/PagingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/test/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/test/BoardApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/test/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/test/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/test/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2/BoardApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2/PostView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/ProjectApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/membership/MembershipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/membership/MembershipController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/page/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/page/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/page/PagingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/page/PagingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/page/PagingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/page/PagingView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/teat/Test.java" beforeDir="false" />
-    </list>
+    <list default="true" id="a684f083-1163-403b-9f23-134ea7c74765" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
