@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class MembershipController {
 
-    private ArrayList<Membership> memberships = new ArrayList<>();
+    private MembershipRepository membershipRepository = new MembershipRepository();
+
     private String loggedInId = null;
     private String loggedInNickname = null;
     private Scanner sc = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class MembershipController {
         String nickname = sc.nextLine();    // 고객 닉네임
 
         Membership membership = new Membership(logInid, pass, nickname);
-        memberships.add(membership);
+        membershipRepository.save(membership);
         System.out.println("회원가입이 완료되었습니다.");
     }
 
@@ -33,7 +34,7 @@ public class MembershipController {
         System.out.print("비밀번호 : ");
         String pass = sc.nextLine();
 
-        for (Membership membership : memberships) {
+        for (Membership membership : membershipRepository.getMemberships()) {
             if (membership.getLogInId().equals(logInId) && membership.getPass().equals(pass)) {
                 loggedInId = membership.getLogInId();   // 로그인한 유저 id 저장
                 loggedInNickname = membership.getNickname();

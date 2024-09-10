@@ -3,14 +3,16 @@ package project.page;
 import project.post.Post;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PagingController {
 
+   private PagingView pagingView = new PagingView();
+    Scanner sc = new Scanner(System.in);
     private ArrayList<Post> posts;
     private int itemsPerPage;   //페이지 항목
     private int currentPage; //현재 페이지
     private int totalPages; //전체 페이지
-
 
 
     public PagingController(ArrayList<Post> posts, int itemsPerPage) {
@@ -22,23 +24,20 @@ public class PagingController {
     }
 
     public void page() {
-        Paging paging = new Paging(posts, 3);   //페이지당 3개의 게시물
-
-
         while (true) {
-            paging.printCurrentPage();
+            pagingView.printCurrentPage(posts, currentPage, itemsPerPage, totalPages);
 
             System.out.print("페이징 명령어를 입력해주세요 (1. 이전, 2. 다음, 3. 선택, 4. 뒤로가기) : ");
             int command = Integer.parseInt(sc.nextLine());
 
             if (command == 1) { // 이전 페이지
-                paging.prevPage();
+              prevPage();
             } else if (command == 2) { // 다음 페이지
-                paging.nextPage();
+                nextPage();
             } else if (command == 3) { // 특정 페이지 선택
                 System.out.print("이동하실 페이지 번호를 입력해주세요 : ");
                 int selectedPage = Integer.parseInt(sc.nextLine());
-                paging.moveToPage(selectedPage);
+                moveToPage(selectedPage);
             } else if (command == 4) { // 뒤로가기
                 break;
             }
@@ -46,17 +45,6 @@ public class PagingController {
     }
 
 
-    // 현재 페이지의 게시물 출력
-    public void printCurrentPage() {
-        int start = (currentPage - 1) * itemsPerPage;
-        int end = Math.min(start + itemsPerPage, posts.size());
-        System.out.println("===============");
-        for (int i = start; i < end; i++) {
-            Post post = posts.get(i);
-
-        }
-        printPageBlock();
-    }
     // 이전 페이지로 이동
     public void prevPage() {
         if (currentPage > 1) {

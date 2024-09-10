@@ -14,14 +14,15 @@ public class Paging {
     // 전체 페이지
     private int totalPages;
 
+
+
+
     public Paging(ArrayList<Post> posts, int itemsPerPage) {
         this.posts = posts;
         this.itemsPerPage = itemsPerPage;
         this.currentPage = 1;
         this.totalPages = (int) Math.ceil((double) posts.size() / itemsPerPage);
     }
-
-
 
 
     // 이전 페이지로 이동
@@ -53,24 +54,6 @@ public class Paging {
         }
     }
 
-
-    // 페이징 블록을 출력 (5페이지씩)
-    private void printPageBlock() {
-        int currentBlock = (currentPage - 1) / 5 * 5 + 1;
-        int endBlock = Math.min(currentBlock + 4, totalPages);
-
-        for (int i = currentBlock; i <= endBlock; i++) {
-            if (i == currentPage) {
-                System.out.printf("[%d] ", i);
-            } else {
-                System.out.printf("%d ", i);
-            }
-        }
-        if (endBlock < totalPages) {
-            System.out.print(">>");
-        }
-        System.out.println();
-    }
 
 
     // 현재 페이지 반환

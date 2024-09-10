@@ -3,8 +3,8 @@ package project;
 import project.membership.MembershipController;
 import project.post.PostController;
 
-import java.io.*;
-import java.util.*;
+import java.io.Serializable;
+import java.util.Scanner;
 
 public class ProjectApp implements Serializable {
 
@@ -49,8 +49,8 @@ public class ProjectApp implements Serializable {
                 membershipController.login();
             } else if (command.equals("sort")) {
                 postController.sort();
-            }else if(command.equals("page")) {
-                postController.page();
+//            }else if(command.equals("page")) {
+//                postController.page();
             }
         }
     }
