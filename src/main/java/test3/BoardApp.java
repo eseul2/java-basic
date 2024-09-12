@@ -1,4 +1,6 @@
-package test2;
+package test3;
+
+import test3.post.PostController;
 
 import java.util.Scanner;
 
@@ -7,11 +9,11 @@ public class BoardApp {
     Scanner sc = new Scanner(System.in);
     PostController postController = new PostController();
 
-    public void run() {
+    public void start() {
 
 
         while (true) {
-            System.out.print("명령어를 입력해주세요 : ");
+            System.out.print("명령어를 입력하세요 : ");
             String command = sc.nextLine();
 
             if (command.equals("exit")) {
@@ -29,13 +31,12 @@ public class BoardApp {
                 postController.detail();
             } else if (command.equals("search")) {
                 postController.search();
+            }else if(command.equals("signup")) {
+                postController.signup();
             }
         }
     }
 
 
-
 }
-
-
 

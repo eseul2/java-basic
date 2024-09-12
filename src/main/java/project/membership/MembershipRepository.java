@@ -1,7 +1,5 @@
 package project.membership;
 
-import project.post.Post;
-
 import java.util.ArrayList;
 
 public class MembershipRepository {

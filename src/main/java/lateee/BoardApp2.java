@@ -1,14 +1,16 @@
-package test2;
+package lateee;
+
+import lateee.post.PostController;
 
 import java.util.Scanner;
 
-public class BoardApp {
+public class BoardApp2 {
 
-    Scanner sc = new Scanner(System.in);
     PostController postController = new PostController();
 
-    public void run() {
+    public void start() {
 
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
             System.out.print("명령어를 입력해주세요 : ");
@@ -31,11 +33,7 @@ public class BoardApp {
                 postController.search();
             }
         }
+
+
     }
-
-
-
 }
-
-
-
