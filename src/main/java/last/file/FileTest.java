@@ -52,11 +52,21 @@ public class FileTest {
         m1.setLoginPw("1234");
         m1.setNickname("홍길동");
 
+        String memberContent =  fu.load("member.json");
         String memberJson = ju.toJsonString(m1); // Member 직렬화
         fu.save(memberJson, "member.json"); // 문자 => 객체
 
-//        Member m2 = ju.toMember(memberContent);
+        Member m2 = ju.toMember(memberContent);
         System.out.println("m2.getNickname");
+
+
+
+        // JSON 파일에서 데이터를 읽어와 memberContent에 저장
+//        String memberContent = fu.read("member.json");
+
+// JSON 데이터를 Member 객체로 변환
+//        Member m2 = ju.toMember(memberContent);
+//        System.out.println(m2.getNickname());
 
 
 
